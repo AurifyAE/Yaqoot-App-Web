@@ -200,9 +200,7 @@ function TvScreen() {
       .toLocaleDateString("en-GB", {
         month: "short",
         day: "2-digit",
-        year: "numeric",
-      })
-      .toUpperCase();
+      });
   };
 
   return (

@@ -26,7 +26,7 @@ const SpotRate = () => {
   };
 
   const renderSpotSection = (metal, data) => (
-    <div className="rounded-lg flex flex-row justify-between items-center text-center py-2 px-4 w-full">
+    <div className="rounded-lg flex flex-row justify-between items-center text-center py-2 px-2 w-full">
       <div
         className="font-poppins flex flex-row items-center justify-between text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white w-full"
         style={{
