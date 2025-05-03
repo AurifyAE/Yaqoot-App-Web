@@ -84,13 +84,13 @@ const CommodityTable = ({ commodities }) => {
 
               return (
                 <tr key={index} className="bg-[#3A0353] table-row-gap">
-                  <td className="p-2 md:p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl px-5">
+                  <td className="p-2 md:p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold px-5">
                     {commodity.metal.toUpperCase()} {purity}
                   </td>
-                  <td className="p-2 md:p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                  <td className="p-2 md:p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
                     {unit} {weight}
                   </td>
-                  <td className="p-2 md:p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                  <td className="p-2 md:p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
                     {formatValue(sellPrice, weight)}
                   </td>
                 </tr>
