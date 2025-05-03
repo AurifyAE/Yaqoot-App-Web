@@ -38,9 +38,9 @@ const CommodityTable = ({ commodities }) => {
         <table className="w-full border-collapse text-left table-spacing">
           <thead>
             <tr>
-              <th className="bg-[#35004E] text-white text-xs sm:text-sm md:text-base lg:text-lg p-2 md:p-3 rounded-tl-xl px-5">Commodity</th>
-              <th className="bg-[#35004E] text-white text-xs sm:text-sm md:text-base lg:text-lg p-2 md:p-3">Unit</th>
-              <th className="bg-[#35004E] text-white text-xs sm:text-sm md:text-base lg:text-lg p-2 md:p-3 rounded-tr-xl">Price</th>
+              <th className="bg-[#35004E] text-white text-xs text-lg sm:text-xl md:text-2xl lg:text-3xl p-2 md:p-3 rounded-tl-xl px-5">Commodity</th>
+              <th className="bg-[#35004E] text-white text-xs text-lg sm:text-xl md:text-2xl lg:text-3xl p-2 md:p-3">Unit</th>
+              <th className="bg-[#35004E] text-white text-xs text-lg sm:text-xl md:text-2xl lg:text-3xl p-2 md:p-3 rounded-tr-xl">Price</th>
             </tr>
           </thead>
           <tbody>
@@ -84,13 +84,13 @@ const CommodityTable = ({ commodities }) => {
 
               return (
                 <tr key={index} className="bg-[#3A0353] table-row-gap">
-                  <td className="p-2 md:p-3 text-xs sm:text-sm md:text-base font-medium px-5">
+                  <td className="p-2 md:p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl px-5">
                     {commodity.metal.toUpperCase()} {purity}
                   </td>
-                  <td className="p-2 md:p-3 text-xs sm:text-sm md:text-base font-medium">
+                  <td className="p-2 md:p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl">
                     {unit} {weight}
                   </td>
-                  <td className="p-2 md:p-3 font-bold text-sm sm:text-base md:text-lg lg:text-xl">
+                  <td className="p-2 md:p-3 text-lg sm:text-xl md:text-2xl lg:text-3xl">
                     {formatValue(sellPrice, weight)}
                   </td>
                 </tr>
